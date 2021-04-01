@@ -7,6 +7,7 @@ import 'package:nahjul_balagha/screens/hikmatlist.dart';
 import 'package:nahjul_balagha/screens/favourites.dart';
 import 'package:nahjul_balagha/screens/khutbalist.dart';
 import 'package:nahjul_balagha/screens/maktooblist.dart';
+import 'package:nahjul_balagha/screens/settings.dart';
 import 'package:nahjul_balagha/widgets/aboutus.dart';
 import 'package:nahjul_balagha/widgets/bottomnavigation.dart';
 import 'package:nahjul_balagha/widgets/homebottomnav.dart';
@@ -248,6 +249,16 @@ class _HomepageState extends State<Homepage> {
                 },
               ),
               Divider(),
+              ListTile(
+                leading: Icon(Icons.settings),
+                title:
+                Text('Settings', style: TextStyle(fontFamily: 'Lato-Bold')),
+                onTap: () {
+                  // Update the state of the app.
+                  // ...
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => settings()));
+                },
+              ),
             ],
           ),
         ),
