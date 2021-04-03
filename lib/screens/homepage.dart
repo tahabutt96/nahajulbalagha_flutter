@@ -5,6 +5,7 @@ import 'package:nahjul_balagha/constants/constant_color.dart';
 import 'package:nahjul_balagha/constants/constant_text.dart';
 import 'package:nahjul_balagha/screens/hikmatlist.dart';
 import 'package:nahjul_balagha/screens/favourites.dart';
+import 'package:nahjul_balagha/screens/introduction.dart';
 import 'package:nahjul_balagha/screens/khutbalist.dart';
 import 'package:nahjul_balagha/screens/maktooblist.dart';
 import 'package:nahjul_balagha/screens/settings.dart';
@@ -263,7 +264,10 @@ class _HomepageState extends State<Homepage> {
           ),
         ),
         body: Container(
-            margin: const EdgeInsets.only(bottom: 50), child: homebottomnav()),
+            margin: const EdgeInsets.only(bottom: 50),
+            //child: homebottomnav()
+          child: Introduction(),
+        ),
       ),
     );
   }

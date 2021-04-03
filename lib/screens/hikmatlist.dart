@@ -32,6 +32,11 @@ class _hikmatlistState extends State<hikmatlist> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        appBar: AppBar(
+          backgroundColor: primary_background,
+          title: Text("Hikmat"),
+          centerTitle: true,
+        ),
       body: ListView.builder(
           itemCount: categories.length,
           shrinkWrap: true,

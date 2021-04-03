@@ -32,7 +32,11 @@ class _khutbalistState extends State<khutbalist> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
+        appBar: AppBar(
+          backgroundColor: primary_background,
+          title: Text("Khutba"),
+          centerTitle: true,
+        ),
         body: ListView.builder(
           itemCount: categories.length,
           shrinkWrap: true,

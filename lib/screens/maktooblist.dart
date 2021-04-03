@@ -32,6 +32,11 @@ class _maktooblistState extends State<maktooblist> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        appBar: AppBar(
+          backgroundColor: primary_background,
+          title: Text("Maktoob"),
+          centerTitle: true,
+        ),
         body: ListView.builder(
           itemCount: categories.length,
           shrinkWrap: true,
